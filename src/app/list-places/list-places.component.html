@@ -1,0 +1,26 @@
+  
+<div class="container">
+  <div class="selected-place-img" *ngIf = "selectedPlace">
+    <img [src] = "selectedPlace?.img" width="300" height="200">
+  </div>
+  <div class="list-categories">
+    <a href="#" class="category-link" *ngFor="let category of categories" (click)="onChangeCategory($event, category)" >
+      {{category.replace("_", " ") | capitalize}}
+    </a>
+  </div>
+  <div class="list-places-title">Choose place</div>
+  <div class="list-places" *ngIf="places$ | async as places">
+    <div *ngFor="let place of places | categoryFilter:choosenCategory; first as first;" >
+      <div class="place-item clearfix" [appChangeCategory] = "first ? place : false" (click) = onSelectPlace(place)>
+        <div class="place-address">
+          <div class="place-address-title">Resort Address</div>
+          <div class="place-address-text">{{place.address}}</div>
+        </div>
+        <div class="place-images">
+              <img width="40" height="40" [src]="place.img"/>
+              <img width="40" height="40" [src]="place.socialInfo.img"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

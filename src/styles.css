@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #313144;
+    font-size: 16px;
+}
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}

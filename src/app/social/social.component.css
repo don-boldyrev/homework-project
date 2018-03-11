@@ -1,0 +1,26 @@
+.container {
+    width: 200px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    background-color: #fd7b87;
+    color: #fff;
+    text-align: center;
+}
+.image {
+    margin-bottom: 10px;
+}
+.title {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.folowers-count,
+.folowing-count {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.folowers-count {
+    width: calc(50% - 5px);
+    border-right: 1px solid grey
+}

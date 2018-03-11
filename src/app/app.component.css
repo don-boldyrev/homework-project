@@ -1,0 +1,16 @@
+app-list-places {
+    float: left;
+}
+app-weather {
+    display: block;
+    margin-bottom: 20px;
+}
+.info-block {
+    float: right;
+}
+
+.main-container {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 100px;
+}

@@ -1,0 +1,26 @@
+.container {
+    background-color: #5fb3f9;
+    width: 200px;
+    height: 180px;
+    color: #fff;
+    padding-top: 20px;
+    border-radius: 5px;
+}
+.title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.temperature {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.temperature-text {
+    font-size: 30px;
+}
+.water {
+    font-size: 20px;
+    text-align: center;
+}
